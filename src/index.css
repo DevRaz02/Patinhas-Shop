@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+@keyframes trocar {
+  0%,
+  40% {
+    opacity: 1;
+  }
+
+  50%,
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.banner1 {
+  animation: trocar 8s infinite;
+}
+
+.banner2 {
+  animation: trocar 8s infinite 4s;
+}
