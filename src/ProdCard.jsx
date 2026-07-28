@@ -144,7 +144,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 14,
-      imagem: "image/brinquedo/erva.png",
+      imagem: "image/brinquedo/ervaCatnip.png",
       nome: "Chalesco Brinquedo Abacate Catnip",
       peso: "Unidade (Catnip Giratório)",
       precoAntigo: "R$ 39,90",
@@ -155,26 +155,26 @@ function ProductCard({ adicionarAoCarrinho }) {
     {
       id: 15,
       imagem: "image/brinquedo/lancador.png",
-      nome: "Lançador Automático de Bolinhas",
+      nome: "Lançador de Bolinhas",
       peso: "Unidade (1.5 kg)",
       precoAntigo: "",
       desconto: "", // 1º SEM OFF
-      preco: "R$ 299,90",
+      preco: "R$ 93,99",
       avaliacao: "4.7 (82 avaliações)",
     },
     {
       id: 16,
-      imagem: "image/brinquedo/mordedor.png",
-      nome: "Mordedor Resistente de Borracha",
+      imagem: "image/brinquedo/mordedorShark.png",
+      nome: "Mordedor Shark de Borracha",
       peso: "Tamanho M (200g)",
       precoAntigo: "",
       desconto: "", // 2º SEM OFF
-      preco: "R$ 39,90",
+      preco: "R$ 49,90",
       avaliacao: "4.6 (110 avaliações)",
     },
     {
       id: 17,
-      imagem: "image/brinquedo/ossoDeCoco.png",
+      imagem: "image/brinquedo/ossoCoco.png",
       nome: "Osso Recreativo de Fibra de Coco",
       peso: "Tamanho Único (180g)",
       precoAntigo: "",
@@ -336,7 +336,7 @@ function ProductCard({ adicionarAoCarrinho }) {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto py-10 relative">
+    <main id="sessaoRaçoes" className="w-full max-w-6xl mx-auto py-10 relative">
       <h2 className="text-5xl font-bold text-amber-600 m-2">Rações</h2>
       <p className="text-4xl font-bold text-orange-900 m-6">Cachorros</p>
 
@@ -418,7 +418,12 @@ function ProductCard({ adicionarAoCarrinho }) {
         </button>
       </div>
 
-      <h2 className="text-5xl font-bold text-blue-400 mt-10">Acessórios</h2>
+      <h2
+        id="sessaoAcessorios"
+        className="text-5xl font-bold text-blue-400 mt-10"
+      >
+        Acessórios
+      </h2>
       <p className="text-4xl font-bold text-pink-500 m-6">Brinquedos</p>
 
       <div className="relative flex items-center w-full px-12">
@@ -498,7 +503,7 @@ function ProductCard({ adicionarAoCarrinho }) {
           &#10095;
         </button>
       </div>
-    </div>
+    </main>
   );
 } // Esta chave fecha a function ProductCard
 
