@@ -336,7 +336,10 @@ function ProductCard({ adicionarAoCarrinho }) {
   };
 
   return (
-    <main id="sessaoRaçoes" className="w-full max-w-6xl mx-auto py-10 relative">
+    <main
+      id="sessaoRaçoes"
+      className=" scroll-mt-36 w-full max-w-6xl mx-auto py-10 relative"
+    >
       <h2 className="text-5xl font-bold text-amber-600 m-2">Rações</h2>
       <p className="text-4xl font-bold text-orange-900 m-6">Cachorros</p>
 
@@ -420,7 +423,7 @@ function ProductCard({ adicionarAoCarrinho }) {
 
       <h2
         id="sessaoAcessorios"
-        className="text-5xl font-bold text-blue-400 mt-10"
+        className="text-5xl scroll-mt-40 font-bold text-blue-400 mt-10"
       >
         Acessórios
       </h2>
