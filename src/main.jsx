@@ -15,23 +15,33 @@ function App() {
     setCarrinho([...carrinho, produto]);
   };
 
-  return (
-    <>
-      {/* O Header recebe o carrinho para saber a quantidade */}
-      <Header carrinho={carrinho} />
+  function App() {
+    // A lista do carrinho fica salva aqui!
+    const [carrinho, setCarrinho] = useState([]);
 
-      <Banners />
+    // Função para adicionar o produto
+    const adicionarAoCarrinho = (produto) => {
+      setCarrinho([...carrinho, produto]);
+    };
 
-      {/* O ProductCard recebe a função para adicionar itens */}
-      <ProductCard adicionarAoCarrinho={adicionarAoCarrinho} />
+    return (
+      <>
+        {/* O Header recebe o carrinho para saber a quantidade */}
+        <Header carrinho={carrinho} />
 
-      <Footer />
-    </>
+        <Banners />
+
+        {/* O ProductCard recebe a função para adicionar itens */}
+        <ProductCard adicionarAoCarrinho={adicionarAoCarrinho} />
+
+        <Footer />
+      </>
+    );
+  }
+
+  createRoot(document.getElementById("root")).render(
+    <StrictMode>
+      <App />
+    </StrictMode>,
   );
 }
-
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);

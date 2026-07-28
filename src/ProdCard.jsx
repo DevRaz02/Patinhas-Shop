@@ -8,7 +8,7 @@ function ProductCard({ adicionarAoCarrinho }) {
   const produtoDog = [
     {
       id: 1,
-      imagem: "/image/racaoDog/premier.png",
+      imagem: "image/racaoDog/premier.png",
       nome: "Ração Premier Formula Cães Adultos Raças Médias",
       peso: "Pacote de 15kg",
       precoAntigo: "",
@@ -18,7 +18,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 2,
-      imagem: "/image/racaoDog/quabi.png",
+      imagem: "image/racaoDog/quabi.png",
       nome: "Guabi Natural Vida Mais Saudável",
       peso: "Pacote de 15kg",
       precoAntigo: "R$ 319,90 ",
@@ -28,7 +28,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 3,
-      imagem: "/image/racaoDog/royalCanin.png",
+      imagem: "image/racaoDog/royalCanin.png",
       nome: "Royal Canin Gastrointestinal",
       peso: "pacote de 10.1kg",
       precoAntigo: "R$ 499,90",
@@ -38,7 +38,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 4,
-      imagem: "/image/racaoDog/continente.png",
+      imagem: "image/racaoDog/continente.png",
       nome: "Continente Pet Carne e Cereais",
       peso: "pacote 15kg",
       desconto: "",
@@ -48,7 +48,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 5,
-      imagem: "/image/racaoDog/quatree.png",
+      imagem: "image/racaoDog/quatree.png",
       nome: "Quatree Gourmet Filhotes Premium",
       peso: "pacote 15kg",
       desconto: "30% OFF",
@@ -58,7 +58,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 6,
-      imagem: "/image/racaoDog/bawWaw.png",
+      imagem: "image/racaoDog/bawWaw.png",
       nome: "Ração Baw Waw, Frango & Arroz",
       peso: "pacote 15kg",
       desconto: "",
@@ -71,7 +71,7 @@ function ProductCard({ adicionarAoCarrinho }) {
   const produtoCat = [
     {
       id: 7,
-      imagem: "/image/racaoCat/Farmina.png",
+      imagem: "image/racaoCat/Farmina.png",
       nome: "Farmina N&D Grain-Free",
       peso: "Pacote de 15kg",
       precoAntigo: "R$ 169,90",
@@ -81,7 +81,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 8,
-      imagem: "/image/racaoCat/goldengatos.png",
+      imagem: "image/racaoCat/goldengatos.png",
       nome: "Golden Gatos Adultos",
       peso: "Pacote de 15kg",
       precoAntigo: "",
@@ -91,7 +91,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 9,
-      imagem: "/image/racaoCat/granplus.png",
+      imagem: "image/racaoCat/granplus.png",
       nome: "Royal Canin Gastrointestinal",
       peso: "pacote de 10.1kg",
       precoAntigo: "R$ 499,90",
@@ -101,7 +101,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 10,
-      imagem: "/image/racaoCat/matisse.png",
+      imagem: "image/racaoCat/matisse.png",
       nome: "Matisse Castrados Frango",
       peso: "pacote 15kg",
       desconto: "",
@@ -111,7 +111,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 11,
-      imagem: "/image/racaoCat/purina.png",
+      imagem: "image/racaoCat/purina.png",
       nome: "Purina Pro Plan LiveClear",
       peso: "pacote 15kg",
       desconto: "30% OFF",
@@ -121,7 +121,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 12,
-      imagem: "/image/racaoCat/whiskas.png",
+      imagem: "image/racaoCat/whiskas.png",
       nome: "Matisse Castrados Frango",
       peso: "pacote 15kg",
       desconto: "",
@@ -134,7 +134,7 @@ function ProductCard({ adicionarAoCarrinho }) {
   const produtoToy = [
     {
       id: 13,
-      imagem: "/image/brinquedos/bolaAutonoma.png",
+      imagem: "image/brinquedo/bolaAutonoma.png",
       nome: "Pet Gravity Bola Interativa Autônoma",
       peso: "Unidade (43mm)",
       precoAntigo: "R$ 89,90",
@@ -144,7 +144,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 14,
-      imagem: "/image/brinquedos/erva.png",
+      imagem: "image/brinquedo/erva.png",
       nome: "Chalesco Brinquedo Abacate Catnip",
       peso: "Unidade (Catnip Giratório)",
       precoAntigo: "R$ 39,90",
@@ -154,7 +154,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 15,
-      imagem: "/image/brinquedos/lancador.png",
+      imagem: "image/brinquedo/lancador.png",
       nome: "Lançador Automático de Bolinhas",
       peso: "Unidade (1.5 kg)",
       precoAntigo: "",
@@ -164,7 +164,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 16,
-      imagem: "/image/brinquedos/mordedor.png",
+      imagem: "image/brinquedo/mordedor.png",
       nome: "Mordedor Resistente de Borracha",
       peso: "Tamanho M (200g)",
       precoAntigo: "",
@@ -174,7 +174,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 17,
-      imagem: "/image/brinquedos/ossoDeCoco.png",
+      imagem: "image/brinquedo/ossoDeCoco.png",
       nome: "Osso Recreativo de Fibra de Coco",
       peso: "Tamanho Único (180g)",
       precoAntigo: "",
@@ -184,7 +184,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 18,
-      imagem: "/image/brinquedos/rasgador.png",
+      imagem: "image/brinquedo/rasgador.png",
       nome: "Arranhador Torre Bola Pendurada",
       peso: "Unidade (1.2 kg)",
       precoAntigo: "R$ 129,90",
@@ -197,7 +197,7 @@ function ProductCard({ adicionarAoCarrinho }) {
   const produtoLook = [
     {
       id: 19,
-      imagem: "/image/roupas/capaDeChuva.png",
+      imagem: "image/roupas/capaDeChuva.png",
       nome: "Capa de Chuva Impermeável Pet",
       peso: "Tamanho M",
       precoAntigo: "R$ 89,90",
@@ -207,7 +207,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 20,
-      imagem: "/image/roupas/colete.png",
+      imagem: "image/roupas/colete.png",
       nome: "Colete Acolchoado de Inverno",
       peso: "Tamanho G",
       precoAntigo: "R$ 39,90",
@@ -218,7 +218,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 21,
-      imagem: "/image/roupas/fantasiaTubarao.png",
+      imagem: "image/roupas/fantasiaTubarao.png",
       nome: "Fantasia Pet Divertida Tubarão",
       peso: "Tamanho P",
       precoAntigo: "",
@@ -228,7 +228,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 22,
-      imagem: "/image/roupas/moleton.png",
+      imagem: "image/roupas/moleton.png",
       nome: "Moletom Quentinho com Capuz",
       peso: "Tamanho M",
       precoAntigo: "",
@@ -238,7 +238,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 23,
-      imagem: "/image/roupas/roupaoPosBanho.png",
+      imagem: "image/roupas/roupaoPosBanho.png",
       nome: "Roupão Pós-Banho Microfibra Pet",
       peso: "Tamanhos: P | M | G", // 👈 Especifica as opções disponíveis
       precoAntigo: "",
@@ -248,7 +248,7 @@ function ProductCard({ adicionarAoCarrinho }) {
     },
     {
       id: 24,
-      imagem: "/image/roupas/roupaVerao.png",
+      imagem: "image/roupas/roupaVerao.png",
       nome: "Camiseta Leve de Verão Estampada",
       peso: "Tamanho P",
       precoAntigo: "R$ 129,90",

@@ -5,7 +5,7 @@ function Header({ carrinho = [], onAbrirCarrinho }) {
   return (
     <header className="fixed w-auto top-4 left-[14px] right-[14px] z-50 backdrop-blur-md rounded-[10px] shadow-[-6px_10px_30px_1px_rgba(0,0,0,0.15)] bg-white/80">
       <nav className="flex justify-evenly items-center p-3 font-bold text-base text-green-600">
-        <img className="w-20" src="/image/logo/logo.png" alt="logoDoSite" />
+        <img className="w-20" src="image/logo/logo.png" alt="logoDoSite" />
 
         <a
           className="text-[20px] hover:text-black transition duration-300"
@@ -38,7 +38,7 @@ function Header({ carrinho = [], onAbrirCarrinho }) {
         >
           <img
             className="w-10 transform group-hover:scale-110 duration-200"
-            src="/image/carrinho/carrinho.png"
+            src="image/carrinho/carrinho.png"
             alt="imgCart"
           />
 

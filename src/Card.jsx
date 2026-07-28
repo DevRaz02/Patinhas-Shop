@@ -69,8 +69,8 @@ function Card({
 
           <div className="flex gap-2 items-center mt-2">
             <img
-              src="/image/estrela/estrela.png"
-              className="w-5 h-5"
+              src="image/star/estrela.png"
+              className="w-6 h-6"
               alt="estrela"
             />
             <span className="text-sm text-gray-600">{avaliacao}</span>
