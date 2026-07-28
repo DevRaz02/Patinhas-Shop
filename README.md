@@ -1,8 +1,16 @@
-# React + Vite
+# 🐾 Patinhas Store - Pet Shop Online
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web e-commerce desenvolvida em React para listagem e exibição de produtos de pet shop.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
+* **React 18** (Vite)
+* **Tailwind CSS v4** (Estilização responsiva e UI)
+* **GitHub Pages** (Hospedagem e Deploy)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Principais Funcionalidades
+* **Card de Produtos Dinâmico:** Exibição com limitação de linhas para padronização (`line-clamp`).
+* **Tooltip Customizado:** Balão explicativo interativo no *hover* do mouse para exibir o nome completo de títulos cortados.
+* **Layout Responsivo:** Adaptado para navegação em dispositivos móveis e desktop.
+
+## 🔗 Link do Projeto
+👉 [Acessar a Patinhas Store](https://devraz02.github.io/Patinhas-Store/)
