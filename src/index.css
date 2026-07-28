@@ -1,6 +1,5 @@
-@import "tailwindcss";
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+@import "tailwindcss";
 
 * {
   font-family: "Roboto", sans-serif;
@@ -8,10 +7,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: #bfe2cd;
 }
 
 @keyframes trocar {
