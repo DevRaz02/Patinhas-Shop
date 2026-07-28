@@ -17,4 +17,4 @@ Aplicação web e-commerce desenvolvida em React para listagem e exibição de p
 - [ ] **Ajustes de Responsividade:** Refinar o layout para telas pequenas.
 
 ## 🔗 Link do Projeto
-👉 [Acessar a Patinhas Store](https://devraz02.github.io/Patinhas-Store/)
+👉 [Acessar a Patinhas Store](https://devraz02.github.io/Patinhas-Shop/)
