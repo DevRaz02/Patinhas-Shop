@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 function Card({
+  id,
   imagem,
   nome,
   desconto,
@@ -10,7 +11,7 @@ function Card({
   avaliacao,
   adicionar,
 }) {
-  const [mostrar, setMostrar] = useState("");
+  const [mostrar, setMostrar] = useState(false);
 
   // Função acionada ao clicar no botão
   const mostrarCarrinho = () => {
@@ -18,15 +19,12 @@ function Card({
 
     // Chama a função passada pelo ProductCard (se existir)
     if (adicionar) {
-      adicionar({
-        nome,
-      });
+      adicionar({ id, nome, preco });
     }
 
-    // Faz o span sumir depois de 3 segundos
     setTimeout(() => {
       setMostrar(false);
-    }, 3000);
+    }, 1000);
   };
 
   return (

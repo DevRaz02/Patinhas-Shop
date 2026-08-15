@@ -359,6 +359,7 @@ function ProductCard({ adicionarAoCarrinho }) {
             {produtoDog.map((item) => (
               <div key={item.id} className="w-1/3 flex-shrink-0 px-3">
                 <Card
+                  id={item.id}
                   imagem={item.imagem}
                   nome={item.nome}
                   desconto={item.desconto}
@@ -399,6 +400,7 @@ function ProductCard({ adicionarAoCarrinho }) {
             {produtoCat.map((item) => (
               <div key={item.id} className="w-1/3 flex-shrink-0 px-3">
                 <Card
+                  id={item.id}
                   imagem={item.imagem}
                   nome={item.nome}
                   desconto={item.desconto}
@@ -445,6 +447,7 @@ function ProductCard({ adicionarAoCarrinho }) {
             {produtoToy.map((item) => (
               <div key={item.id} className="w-1/3 flex-shrink-0 px-3">
                 <Card
+                  id={item.id}
                   imagem={item.imagem}
                   nome={item.nome}
                   desconto={item.desconto}
@@ -485,6 +488,7 @@ function ProductCard({ adicionarAoCarrinho }) {
             {produtoLook.map((item) => (
               <div key={item.id} className="w-1/3 flex-shrink-0 px-3">
                 <Card
+                  id={item.id}
                   imagem={item.imagem}
                   nome={item.nome}
                   desconto={item.desconto}

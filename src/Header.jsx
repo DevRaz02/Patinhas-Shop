@@ -1,7 +1,4 @@
-import React from "react";
-
-// ✅ Recebemos os props aqui nos parênteses:
-function Header({ carrinho = [], onAbrirCarrinho }) {
+export function Header({ carrinho = [], onAbrirCarrinho }) {
   return (
     <header className="fixed w-auto top-4 left-[14px] right-[14px] z-50 backdrop-blur-md rounded-[10px] shadow-[-6px_10px_30px_1px_rgba(0,0,0,0.15)] bg-white/80">
       <nav className="flex justify-evenly items-center p-3 font-bold text-base text-green-600">
@@ -32,6 +29,7 @@ function Header({ carrinho = [], onAbrirCarrinho }) {
           className="text-black w-80 px-4 py-2 border-2 border-gray-400 rounded-lg outline-none focus:border-green-600 transition duration-200"
         />
 
+        {/* Botão do Carrinho chama onAbrirCarrinho enviando o sinal pro App */}
         <button
           onClick={onAbrirCarrinho}
           className="relative cursor-pointer group"
@@ -44,7 +42,10 @@ function Header({ carrinho = [], onAbrirCarrinho }) {
 
           {carrinho.length > 0 && (
             <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold animate-pulse">
-              {carrinho.length}
+              {carrinho.reduce(
+                (total, produto) => total + produto.quantidade,
+                0,
+              )}
             </span>
           )}
         </button>

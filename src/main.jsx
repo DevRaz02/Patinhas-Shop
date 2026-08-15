@@ -3,26 +3,56 @@ import { createRoot } from "react-dom/client";
 import Header from "./Header.jsx";
 import "./index.css";
 import Banners from "./Banners.jsx";
+import Sidebar from "./sideBar.jsx";
 import ProductCard from "./ProdCard.jsx";
 import Footer from "./Footer.jsx";
 
 function App() {
-  // A lista do carrinho fica salva aqui!
   const [carrinho, setCarrinho] = useState([]);
+  const [abrirSideBar, setAbrirSideBar] = useState(false);
 
-  // Função para adicionar o produto
   const adicionarAoCarrinho = (produto) => {
-    setCarrinho([...carrinho, produto]);
+    setCarrinho((carrinhoAtual) => {
+      // Procura se o produto já está no carrinho usando o NOME
+      const existe = carrinhoAtual.find((item) => item.nome === produto.nome);
+
+      if (existe) {
+        return carrinhoAtual.map((item) =>
+          item.nome === produto.nome
+            ? { ...item, quantidade: item.quantidade + 1 }
+            : item,
+        );
+      }
+
+      // Se for um produto novo, adiciona com quantidade 1
+      return [
+        ...carrinhoAtual,
+        {
+          ...produto,
+          quantidade: 1,
+        },
+      ];
+    });
   };
 
   return (
     <>
-      {/* O Header recebe o carrinho para saber a quantidade */}
-      <Header carrinho={carrinho} />
+      <Header
+        carrinho={carrinho}
+        onAbrirCarrinho={() => setAbrirSideBar(true)}
+      />
+
+      {/* Repassamos 'carrinho' e 'setCarrinho' para a Sidebar */}
+      {abrirSideBar && (
+        <Sidebar
+          onFechar={() => setAbrirSideBar(false)}
+          carrinho={carrinho}
+          setCarrinho={setCarrinho}
+        />
+      )}
 
       <Banners />
 
-      {/* O ProductCard recebe a função para adicionar itens */}
       <ProductCard adicionarAoCarrinho={adicionarAoCarrinho} />
 
       <Footer />
